@@ -6,7 +6,7 @@ body {
 }
 
 .hero {
-  background: url('bg.jpg') no-repeat center center/cover;
+  background-color: black no-repeat center center/cover;
   color: white;
   padding: 4rem 2rem;
   text-align: center;
