@@ -15,3 +15,37 @@ function generateCalendar() {
 }
 
 document.addEventListener('DOMContentLoaded', generateCalendar);
+
+// tema
+const toggleBtn = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Função para aplicar o tema salvo
+function applySavedTheme() {
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "light") {
+    body.classList.add("light");
+    toggleBtn.textContent = "☀️";
+  } else {
+    body.classList.add("dark");
+    toggleBtn.textContent = "🌙";
+  }
+}
+
+// Função para alternar tema e salvar
+function toggleTheme() {
+  body.classList.toggle("dark");
+  body.classList.toggle("light");
+
+  const newTheme = body.classList.contains("dark") ? "dark" : "light";
+  localStorage.setItem("theme", newTheme);
+
+  toggleBtn.textContent = newTheme === "dark" ? "🌙" : "☀️";
+}
+
+// Aplica o tema salvo ao carregar a página
+document.addEventListener("DOMContentLoaded", () => {
+  applySavedTheme();
+  toggleBtn.addEventListener("click", toggleTheme);
+});
