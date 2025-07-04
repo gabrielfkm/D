@@ -2,46 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Botanical Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Dashboard</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="logo">Home</div>
-      <ul class="nav-links">
-        <li>Menu</li>
-        <li>Locations</li>
-        <li>Jobs</li>
-      </ul>
-    </nav>
-    <div class="hero-content">
-      <h1>Enjoy the taste of <span>botanical</span></h1>
-      <p>Our coffee doesn’t have to taste that way. But it does. It’s not your typical. It’s unnecessarily good.</p>
-      <button>Explore Goodies</button>
-    </div>
-  </header>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">🔲</h2>
+      <nav>
+        <ul>
+          <li class="active">Dashboard</li>
+          <li>Projects</li>
+          <li>My Task</li>
+          <li>Calendar</li>
+          <li>Time Manage</li>
+          <li>Reports</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+    </aside>
 
-  <section class="intro">
-    <h2>From Greenies to Delight.</h2>
-    <p>All in the name of coffee.</p>
-  </section>
+    <!-- Main -->
+    <main class="main">
+      <header class="main-header">
+        <input type="text" placeholder="Search..." />
+        <div class="avatar">👤</div>
+      </header>
 
-  <section class="cities">
-    <div class="city-card">Prague</div>
-    <div class="city-card">Berlin</div>
-    <div class="city-card">Vienna</div>
-  </section>
+      <section class="grid">
+        <!-- Project Cards -->
+        <div class="card project-card">
+          <h3>Google</h3>
+          <p>Task Done: <span id="google-progress">25 / 50</span></p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%;"></div>
+          </div>
+        </div>
 
-  <section class="products">
-    <h2>Unnecessarily Good Good(s)</h2>
-    <div class="product-grid">
-      <div class="product-card">Marsha</div>
-      <div class="product-card">Gogogu</div>
-      <div class="product-card">V60 Dripper</div>
-    </div>
-  </section>
+        <div class="card project-card">
+          <h3>Slack</h3>
+          <p>Task Done: <span id="slack-progress">30 / 30</span></p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 100%;"></div>
+          </div>
+        </div>
 
+        <!-- My Tasks -->
+        <div class="card task-list">
+          <h3>My Tasks</h3>
+          <ul>
+            <li><input type="checkbox" /> Create wireframe</li>
+            <li><input type="checkbox" /> Slack Logo Design</li>
+            <li><input type="checkbox" /> Dashboard Design</li>
+          </ul>
+        </div>
+
+        <!-- Calendar -->
+        <div class="card calendar">
+          <h3>February 2020</h3>
+          <div id="calendar-grid"></div>
+        </div>
+
+        <!-- Messages -->
+        <div class="card messages">
+          <h3>Messages</h3>
+          <ul>
+            <li><strong>John:</strong> Hey, how are you?</li>
+            <li><strong>Charmie:</strong> Do you need that design?</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
