@@ -115,3 +115,62 @@ body {
   gap: 5px;
   margin-top: 10px;
 }
+/* */
+body.dark {
+  background-color: #1f1f2e;
+  color: #fff;
+}
+
+body.light {
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+body.light .sidebar {
+  background-color: #fff;
+}
+
+body.dark .sidebar {
+  background-color: #141421;
+}
+
+body.light .card {
+  background: #fff;
+  color: #111;
+}
+
+body.dark .card {
+  background: #2a2a3b;
+  color: #fff;
+}
+
+body.light .progress-bar {
+  background: #ddd;
+}
+
+body.dark .progress-bar {
+  background: #444;
+}
+
+body.light .progress {
+  background: #4caf50;
+}
+
+body.dark .progress {
+  background: #4caf50;
+}
+
+/* Botão */
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  }
