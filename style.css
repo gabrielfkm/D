@@ -1,45 +1,117 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+* {
   margin: 0;
-  background-color: #f5f5f5;
-  color: #111;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-.hero {
-  background-color: black;
-  color: white;
-  padding: 4rem 2rem;
-  text-align: center;
+body {
+  background-color: #1f1f2e;
+  color: #fff;
+  display: flex;
+  height: 100vh;
 }
 
-.navbar {
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #141421;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul li {
+  list-style: none;
+  padding: 10px 0;
+  color: #bbb;
+  cursor: pointer;
+}
+
+.sidebar ul li.active, .sidebar ul li:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.main-header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-}
-
-.hero-content span {
-  font-weight: bold;
-  color: gray;
-}
-
-button {
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
+.main-header input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 6px;
   border: none;
-  border-radius: 999px;
-  background-color: white;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
+  outline: none;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #2a2a3b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  background: #444;
+  height: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.progress {
+  background: #4caf50;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.task-list ul, .messages ul {
+  margin-top: 10px;
+}
+
+.task-list li, .messages li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+#calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
 }
