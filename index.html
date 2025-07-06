@@ -67,7 +67,21 @@
 
         <!-- Calendar -->
         <!-- Calendário -->
-        
+        <div class="card calendar">
+           <div class="calendar-header">
+              <button id="prev-month">◀️</button>
+              <h3 id="calendar-title">Agenda</h3>
+              <button id="next-month">▶️</button>
+           </div>
+
+            <div id="calendar-grid"></div>
+              <div id="event-list">
+                <h4>Eventos do Dia</h4>
+                <ul id="events"></ul>
+                <input type="text" id="event-input" placeholder="Adicionar evento..." />
+                <button id="add-event">Adicionar</button>
+              </div>
+            </div>
         <!-- Messages -->
         <div class="card messages">
           <h3>Messages</h3>
