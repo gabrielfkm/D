@@ -1,4 +1,4 @@
-INSERT INTO ENDERECO (cpf_cliente, logradouro, numero, complemento, bairro, cidade, estado, cep, tipo) VALUES
+INSERT INTO ENDERECO (cpf_usuario, logradouro, numero, complemento, bairro, cidade, estado, cep, tipo) VALUES
 ('403.691.852-42', 'Área Campos', '46', 'Bloco B', 'Minas Brasil', 'Cunha', 'SP', '23824279', 'Comercial'),
 ('478.653.902-38', 'Núcleo de Gomes', '2', 'Fundos', 'Vila Real 1ª Seção', 'Rezende', 'MA', '63601-072', 'Residencial'),
 ('418.367.950-84', 'Vereda Emanuel Fogaça', '67', 'Fundos', 'Nova Floresta', 'Santos', 'PI', '33464-059', 'Residencial'),
